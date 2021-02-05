@@ -14,8 +14,8 @@ public class Test_Stock {
         Stock OC = new Stock("OCRL","Oracle Coperation");
         System.out.println("Symbol : "+OC.symbol);
         System.out.println("Name : "+OC.name);
-        System.out.println("Previous Closing Price : "+OC.previousClosingPrice);
-        System.out.println("Current Price : "+OC.currentPrice);
+        System.out.println("Previous Closing Price : "+OC.getPrevious(34.5));
+        System.out.println("Current Price : "+OC.getCurrent(34.35));
         System.out.println("Price Change : "+OC.getChangePercent()+"%");
     }
 }

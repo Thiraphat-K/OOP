@@ -12,8 +12,16 @@ package LAP;
 public class Stock {
     String symbol;
     String name;
-    double previousClosingPrice = 34.5;
-    double currentPrice = 34.35;
+    double previousClosingPrice;
+    double currentPrice;
+    double getPrevious(double newPrevious){
+        previousClosingPrice = newPrevious;
+        return previousClosingPrice;
+    }
+    double getCurrent(double newCurrent){
+        currentPrice = newCurrent;
+        return currentPrice;
+    }
     Stock(String newSymbol,String newName){
         symbol = newSymbol;
         name = newName;
