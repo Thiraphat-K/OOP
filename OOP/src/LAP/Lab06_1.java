@@ -25,7 +25,12 @@ public class Lab06_1 {
                 System.out.print("Height(inche) : ");
                 double height_ = input.nextDouble();
                 if (height_ > 0) {
+                    System.out.println("--------------------------------");
                     BMI aBMI_ = new BMI(n, age_, weight_, height_, 0.0254);
+                    System.out.println("Name : " + aBMI_.getName(n));
+                    System.out.println("Age : " + aBMI_.getAge() + " years");
+                    System.out.println("Weight : " + aBMI_.getWeight()+ " pounds");
+                    System.out.println("Height : " + aBMI_.getHeight()+ " inches");
                     System.out.println("BMI : " + aBMI_.getABIT());
                     switch (aBMI_.getCase()) {
                         case 1:

@@ -45,4 +45,21 @@ public class BMI {
         }
         return this.n_case;
     }
+    
+    String getName(String newName){
+        this.name = newName;
+        return this.name;
+    }
+    
+    int getAge(){
+        return this.age;
+    }
+    
+    double getWeight(){
+        return this.weight;
+    }
+    
+    double getHeight(){
+        return this.feet;
+    }
 }
