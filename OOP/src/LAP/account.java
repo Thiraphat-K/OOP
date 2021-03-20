@@ -14,7 +14,7 @@ import java.util.Date;
 public class account {
     private int id;
     private double balance;
-    static private double  annualInterestRate;
+    static private double annualInterestRate;
     private Date dateCreated;
     
     account(int id,double balance){
