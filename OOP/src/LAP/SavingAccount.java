@@ -45,8 +45,8 @@ public class SavingAccount extends NewAccount {
         return monthlyInter;
     }
 
-    public void setMonthlyRate(double monthlyRate) {
-        this.monthlyRate = monthlyRate/(12*100);
+    public void setMonthlyRate(double annualInterestRate) {
+        this.monthlyRate = annualInterestRate/(12*100);
     }
 
     public double getMonthlyRate() {

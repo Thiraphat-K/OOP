@@ -92,6 +92,4 @@ public class NewAccount {
     public boolean isPassWD() {
         return passWD;
     }
-    
-    
 }
