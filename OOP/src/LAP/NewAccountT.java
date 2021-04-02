@@ -92,7 +92,7 @@ public class NewAccountT {
         if(amount > 0 && amount <= this.balance){
             this.withdraw = amount;
             this.balance = this.balance - this.withdraw;
-            transactions.add(new Transaction('W', amount, this.balance, "Withdrawal"));
+            this.transactions.add(new Transaction('W', amount, this.balance, "Withdrawal"));
         }
         else{
             System.out.println("ERROR");
@@ -107,7 +107,7 @@ public class NewAccountT {
         if(amount > 0){
             this.deposit = amount;
             this.balance = this.balance + this.deposit;
-            transactions.add(new Transaction('D', amount, this.balance, "Deposit"));
+            this.transactions.add(new Transaction('D', amount, this.balance, "Deposit"));
         }
         else{
             System.out.println("ERROR");
